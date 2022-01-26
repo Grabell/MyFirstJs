@@ -91,3 +91,46 @@ console.log(typeof(testNull));
 let testUndefined;
 console.log(testUndefined);
 
+//Array
+var first_array = [];
+var second_array = new Array(3);
+var third_array = new Array(3,5);
+var fourth_array = new Array(3,5,"Seville",true,third_array);
+console.log(first_array);
+console.log(second_array);
+console.log(third_array);
+console.log(fourth_array);
+
+//Array access
+console.log(third_array[1]);
+console.log(fourth_array[4][0]);
+
+//Array length
+console.log(fourth_array.length);
+
+//Array push
+console.log(fourth_array.push("Spain"));
+console.log(fourth_array);
+
+//Array unshift
+fourth_array.unshift(1);
+console.log(fourth_array);
+
+//For / For Each
+/*for(var i=0; i<fourth_array.length;i++){
+    console.log("Entramos en la iteracion de "+fourth_array[i]);
+}*/
+
+/*for(var i = fourth_array.length; i>=0;i--){
+    console.log("Second iteration "+fourth_array[i]);
+}*/
+
+/*var i =fourth_array.length;
+for(;i>=0;i--){
+    console.log("Third iteration "+fourth_array[i]);
+}*/
+
+fourth_array.forEach(function(element){
+    console.log("Fourth iteration "+element);
+});
+
