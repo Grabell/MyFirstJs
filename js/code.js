@@ -134,3 +134,10 @@ fourth_array.forEach(function(element){
     console.log("Fourth iteration "+element);
 });
 
+//Date object
+let today = new Date();
+let first_october = new Date(2019,10,1);
+console.log(today);
+console.log(first_october);
+console.log(today.getMonth());
+
